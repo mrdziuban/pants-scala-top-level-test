@@ -22,7 +22,6 @@ Compiling the project with `pants check ::` results in an error:
 2 |val bar = foo
   |          ^^^
   |          Not found: foo
-  |
 ```
 
 However if I modify the files so that `val foo` is not a top-level definition, but is instead defined within an `object`, then everything works:
