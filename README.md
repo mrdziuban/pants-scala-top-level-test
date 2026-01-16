@@ -12,7 +12,7 @@ There are two Scala files here:
 2. `src/main/scala/example/Bar.scala` with contents
     ```scala
     package example
-    val bar = "foo"
+    val bar = foo
     ```
 
 Compiling the project with `pants check ::` results in an error:
