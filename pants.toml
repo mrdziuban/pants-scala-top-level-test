@@ -1,0 +1,11 @@
+[GLOBAL]
+pants_version = "2.30.0"
+# nailgun doesn't support JDKs later than 17 -- https://github.com/pantsbuild/pants/issues/20603
+process_execution_local_enable_nailgun = false
+backend_packages = ["pants.backend.experimental.scala"]
+
+[jvm]
+jdk = "temurin:1.25"
+
+[scala.version_for_resolve]
+jvm-default = "3.8.0"
